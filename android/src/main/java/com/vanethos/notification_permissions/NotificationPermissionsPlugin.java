@@ -12,6 +12,9 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 
+import static android.app.Notification.EXTRA_CHANNEL_ID;
+import static android.provider.Settings.EXTRA_APP_PACKAGE;
+
 public class NotificationPermissionsPlugin implements MethodChannel.MethodCallHandler {
   public static void registerWith(Registrar registrar) {
     final MethodChannel channel =
